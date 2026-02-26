@@ -1,0 +1,31 @@
+class Person {
+    // Atribut
+    String name;
+    int age;
+    String city;
+
+    Person(String name, int age, String city) {
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+
+    // Method untuk menampilkan informasi
+    void displayInfo() {
+        System.out.println("Nama  : " + name);
+        System.out.println("Umur  : " + age);
+        System.out.println("Kota  : " + city);
+    }
+}
+
+// Class utama
+public class Main {
+    public static void main(String[] args) {
+        
+        // Membuat object dari class Person
+        Person person1 = new Person("Rian hidayat", 21, "Bangkalan");
+        
+        // Menampilkan informasi menggunakan method displayInfo()
+        person1.displayInfo();
+    }
+}
